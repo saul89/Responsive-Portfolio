@@ -151,6 +151,7 @@ form{
     justify-content: flex-start;
     align-items: flex-start;
     height: 600px;
+    flex: 1 1;
 }
 
 .pic-placeholder{
@@ -189,6 +190,14 @@ form{
         max-width: 600px;
     }
 
+    .portfolio-pic{
+        max-width: 45%;
+    }
+
+    .single-port-pic, .pic-placeholder{
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width:768px){
@@ -200,6 +209,14 @@ form{
 
     .main-content{
         max-width: 680px;
+    }
+
+    .portfolio-pic{
+        max-width: 45%;
+    }
+
+    .single-port-pic, .pic-placeholder{
+        max-width: 100%;
     }
     
 }
@@ -228,6 +245,7 @@ form{
 
     .main-content{
         margin: 20px;
+        overflow: hidden;
     }
 
     .about-pic-p{
@@ -244,6 +262,22 @@ form{
 
     .multi-p{
         flex:1 100%;
+    }
+
+    .portfolio-pic{
+        max-width: 100%;
+        flex-grow: 1;
+        margin-right: 0;
+    }
+
+    .portfolio-container{
+        overflow: hidden;
+        height: 580px;
+    }
+
+    .single-port-pic, .pic-placeholder{
+        width: 100%;
+        flex-grow: 1;
     }
 
 }
